@@ -172,7 +172,7 @@ h1 span, h2 span {
 .hero-note span { color: var(--color-spring); font-weight: 700; }
 
 /* Hero visual: season card */
-.hero-visual { position: relative; display: grid; place-items: center; }
+.hero-visual { position: relative; display: grid; place-items: center; padding: 60px 0; }
 
 .visual-glow {
   position: absolute;
@@ -234,9 +234,11 @@ h1 span, h2 span {
   backdrop-filter: blur(8px);
 }
 
-.chip-top { top: 4%; right: 0; }
+.floating-chip { white-space: nowrap; }
 
-.chip-bottom { bottom: 6%; left: 0; }
+.chip-top { top: 4px; right: 0; }
+
+.chip-bottom { bottom: 4px; left: 0; }
 
 /* Intro + features */
 .intro {
