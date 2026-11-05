@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Seasonia privacy policy." />
+  <meta name="theme-color" content="#070b1a" />
+  <title>Seasonia — Privacy Policy</title>
+  <link rel="icon" type="image/png" href="./seasonia_logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="Seasonia home">
+      <span class="brand-mark"><img src="./seasonia_logo.png" alt="" width="48" height="48" /></span>
+      <strong>Seasonia</strong>
+    </a>
+    <nav aria-label="Legal">
+      <a aria-current="page" href="./privacy-policy.html">Privacy</a>
+      <a href="./terms-of-use.html">Terms</a>
+    </nav>
+  </header>
+
+  <main class="legal">
+    <p class="eyebrow"><span></span> Legal / Privacy</p>
+    <h1>Privacy Policy</h1>
+    <p class="updated"><strong>Last updated:</strong> July 26, 2026</p>
+
+    <h2>1. Introduction</h2>
+    <p>
+      Seasonia ("we", "our", "us") is a mobile app for seasonal, moon, and
+      sun-time tracking.
+    </p>
+    <p>
+      Our core philosophy is <strong>Privacy by Design</strong>. We believe
+      that your time, location, and seasonal journey should remain yours. This
+      Privacy Policy explains what data Seasonia accesses, how it is used, and
+      your choices. By using Seasonia, you agree to this policy.
+    </p>
+
+    <h2>2. Data We Access and Process</h2>
+    <p>
+      Seasonia is designed to run entirely <strong>offline</strong> for its
+      core functionality. We do not even request the <code>INTERNET</code>
+      permission in our app manifest.
+    </p>
+
+    <h3>a) Location (Optional)</h3>
+    <p>
+      Seasonia may request location permission to improve sunrise and sunset
+      accuracy for your exact coordinates.
+    </p>
+    <ul>
+      <li><strong>Permissions used:</strong> <code>ACCESS_FINE_LOCATION</code> and <code>ACCESS_COARSE_LOCATION</code></li>
+      <li><strong>Purpose:</strong> Astronomical calculations (sunrise/sunset, moon phases, and related seasonal view accuracy).</li>
+      <li><strong>Processing:</strong> All calculations are performed <strong>on-device</strong>.</li>
+      <li><strong>Storage:</strong> Your last known latitude, longitude, and an optional location label (retrieved via the system Geocoder) are stored locally in app preferences.</li>
+      <li><strong>Geocoding:</strong> Since Seasonia does not have Internet access, it relies on the Android system's built-in Geocoding service to resolve coordinates into human-readable city names when possible.</li>
+    </ul>
+    <p>
+      If you deny location permission, Seasonia still works using
+      timezone-based approximate calculations.
+    </p>
+
+    <h3>b) Local App Settings and State</h3>
+    <p>Seasonia stores app settings locally on your device. This data includes:</p>
+    <ul>
+      <li>Selected language and theme preferences.</li>
+      <li>App usage statistics (e.g., launch count to determine when to show the review prompt).</li>
+      <li>Review prompt state (cooldown and completion status).</li>
+      <li>Last location values (if permission was granted).</li>
+      <li>Home screen widget configuration and state.</li>
+    </ul>
+
+    <h3>c) Widgets</h3>
+    <p>
+      Seasonia provides home screen widgets. If you add widgets, Android stores
+      the widget placement and state on your device. Seasonia can refresh
+      widgets on system events (such as time, date, timezone or locale changes
+      and device boot). These refreshes occur locally.
+    </p>
+
+    <h3>d) In-app Review</h3>
+    <p>
+      Seasonia uses the Google Play In-App Review API to request ratings. The
+      display of the review dialog is controlled entirely by Google Play.
+    </p>
+
+    <h2>3. Data We Do Not Collect</h2>
+    <ul>
+      <li><strong>Network data:</strong> Because we do not request the <code>INTERNET</code> permission, our app cannot send your data to any remote server.</li>
+      <li><strong>Personal identifiers:</strong> We do not require account sign-ups. We do not collect your name, email address, or phone number.</li>
+      <li><strong>Analytics and tracking:</strong> Seasonia does <strong>not</strong> include Firebase Analytics, Facebook SDK, advertising SDKs, or any crash-reporting SDKs that would transmit data from your device.</li>
+    </ul>
+
+    <h2>4. Third-Party Services</h2>
+    <p>Seasonia uses Google Play services for platform-level features:</p>
+    <ul>
+      <li>In-App Review</li>
+    </ul>
+    <p>
+      These services are part of the Android ecosystem and may process data
+      according to
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a>.
+    </p>
+
+    <h2>5. Data Sharing</h2>
+    <ul>
+      <li><strong>We do not sell your data.</strong></li>
+      <li><strong>We do not share your data.</strong> All app data stays on your device.</li>
+      <li>Limited data processing may occur by platform providers (e.g., Google Play Services) only when their specific features, such as in-app reviews, are triggered.</li>
+    </ul>
+
+    <h2 id="data-deletion">6. Data Retention and Deletion</h2>
+    <p>
+      Seasonia has no user accounts and no server-side data. Local data is kept
+      on your device until:
+    </p>
+    <ul>
+      <li>You clear the app's data.</li>
+      <li>You uninstall the app.</li>
+      <li>You change or reset values in the app settings.</li>
+    </ul>
+
+    <h2>7. Security</h2>
+    <p>
+      We follow best practices for local data storage on Android. However,
+      please remember that no method of electronic storage is 100% secure.
+    </p>
+
+    <h2>8. Children</h2>
+    <p>
+      Seasonia is safe for all ages and does not knowingly collect personal
+      data from children under 13.
+    </p>
+
+    <h2>9. Your Choices</h2>
+    <p>You can:</p>
+    <ul>
+      <li>Deny location permission and use approximate calculations instead.</li>
+      <li>Change language and settings at any time in the app.</li>
+      <li>Uninstall the app to remove all associated local data.</li>
+    </ul>
+
+    <h2>10. Changes to This Policy</h2>
+    <p>
+      We may update this policy occasionally. Any changes will be published on
+      this page with a new update date.
+    </p>
+
+    <h2>11. Contact</h2>
+    <p>For questions about this Privacy Policy:</p>
+    <p>
+      <strong>Name:</strong> Sait Maraşlıoğlu<br />
+      <strong>Email:</strong> <a href="mailto:saitmaras@gmail.com">saitmaras@gmail.com</a>
+    </p>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="./">Seasonia home</a>
+      <a href="./terms-of-use.html">Terms of Use</a>
+      <a href="mailto:saitmaras@gmail.com">Contact</a>
+    </div>
+  </footer>
+</body>
+</html>
